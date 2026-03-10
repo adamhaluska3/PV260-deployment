@@ -27,7 +27,7 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Publish Blazor
-        run: dotnet publish MyBlazorApp/MyBlazorApp.csproj -c Release -o publish
+        run: dotnet publish PV260.Deployment-main/Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj -c Release -o publish
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
